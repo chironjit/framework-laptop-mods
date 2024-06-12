@@ -1,0 +1,32 @@
+connectors:
+  X1:
+    type: IPEX 20453-040T or compatible
+    subtype: male
+    pinlabels: [17.6V_PWR, 17.6V_PWR, 17.6V_PWR, NC, GND, AUXP, AUXN, GND, TXP_0, TXN_0, GND, TXP_1, TXN_1, GND, TXP_2, TXN_2, GND, TXP_3, TXN_3, GND, EDP_HPD, BL_PWM, BL_OFF, NC, NC, 3V_EDP, 3V_EDP, 3V_EDP, 3V_TS, 3V_TS, USB20_P8_R, USB20_N8_R, TS_EN, TS_RST, TS_INT, TS_SDA, TS_SCL, NC, GND, GND]
+  X2:
+    type: IPEX 20633-030T or compatible
+    subtype: male
+    pinlabels: [BL_ANODE, NC, NC, NC, NC, LED_6, LED_5, LED_4, LED_3, LED_2, LED_1, EDP_HPD, GND, TXP_3, TXN_3, GND, TXP_2, TXN_2, GND, TXP_1, TXN_1, GND, TXP_0, TXN_0, GND, AUXN, AUXP, GND, 3V_VCC, 3V_VCC]
+  F:
+    style: simple
+    type: exposed leads
+
+
+cables:
+  W:
+    gauge: AWG 36
+    length: 0.02
+    color_code: DIN
+    colors: [WH, BN, GN, YE, GY, PK, BU, RD]
+    shield: false
+
+connections:
+  -
+    - X1: [1,2,3,5,39,40]
+    - W.W1: [1-6]
+    - F.
+  -
+    - F.
+    - W.W2: [1-7]
+    - X2: [1,5-10]
+
