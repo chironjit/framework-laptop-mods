@@ -4,17 +4,16 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
-	X1 [label=<
+	IPEX_20877_040T [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">X1</td>
+   <td balign="left">IPEX_20877_040T</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">IPEX 20453-040T or compatible</td>
-   <td balign="left">male</td>
+   <td balign="left">IPEX 20877-040T or compatible</td>
    <td balign="left">40-pin</td>
   </tr></table>
  </td></tr>
@@ -182,19 +181,23 @@ graph {
    </tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Cabbles from the connector should be right angle<br />(please see sample photos of images)<br /></td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	X2 [label=<
+	IPEX_20633_030T [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">X2</td>
+   <td balign="left">IPEX_20633_030T</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">IPEX 20633-030T or compatible</td>
-   <td balign="left">male</td>
    <td balign="left">30-pin</td>
   </tr></table>
  </td></tr>
@@ -214,7 +217,7 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>NC</td>
+    <td>BIST</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
@@ -322,77 +325,172 @@ graph {
    </tr>
   </table>
  </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	F1 [label=<
-<table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">F1</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">exposed leads</td>
+   <td balign="left">Cabbles from the connector should be right angle<br />(please see sample photos of images)<br /></td>
   </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	F2 [label=<
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	IPEX_20877_040T:p1r:e -- INPUT_POWER_LEADS:w1:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	IPEX_20877_040T:p2r:e -- INPUT_POWER_LEADS:w2:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	IPEX_20877_040T:p3r:e -- INPUT_POWER_LEADS:w3:w
+	INPUT_POWER_LEADS [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">F2</td>
+   <td balign="left">INPUT_POWER_LEADS</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">exposed leads</td>
-  </tr></table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
-	X1:p1r:e -- W1:w1:w
-	W1:w1:e -- F1:w
-	edge [color="#000000:#895956:#895956:#895956:#000000"]
-	X1:p2r:e -- W1:w2:w
-	W1:w2:e -- F1:w
-	edge [color="#000000:#00ff00:#00ff00:#00ff00:#000000"]
-	X1:p3r:e -- W1:w3:w
-	W1:w3:e -- F1:w
-	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
-	X1:p5r:e -- W1:w4:w
-	W1:w4:e -- F1:w
-	edge [color="#000000:#999999:#999999:#999999:#000000"]
-	X1:p39r:e -- W1:w5:w
-	W1:w5:e -- F1:w
-	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
-	X1:p40r:e -- W1:w6:w
-	W1:w6:e -- F1:w
-	W1 [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">W1</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">30x</td>
+   <td balign="left">3x</td>
    <td balign="left">AWG 36</td>
-   <td balign="left">0.02 m</td>
+   <td balign="left">+ S</td>
+   <td balign="left">10.0 cm</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>X1:1:17.6V_PWR</td>
+    <td>IPEX_20877_040T:1:17.6V_PWR</td>
+    <td>
+     1:RD
+    </td>
+    <td><!-- 1_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:2:17.6V_PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td><!-- 2_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:3:17.6V_PWR</td>
+    <td>
+     3:RD
+    </td>
+    <td><!-- 3_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td><!-- s_in --></td>
+    <td>Shield</td>
+    <td><!-- s_out --></td>
+   </tr>
+   <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0" port="ws"></td></tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Should be exposed ends to enable soldering to a custom board.<br />Please wrap bundle until last 5 cm exposed cables <br />(3mm exposed leads)<br /></td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
+	IPEX_20877_040T:p21r:e -- INPUT_MISC_LEADS:w1:w
+	edge [color="#000000:#895956:#895956:#895956:#000000"]
+	IPEX_20877_040T:p22r:e -- INPUT_MISC_LEADS:w2:w
+	edge [color="#000000:#00ff00:#00ff00:#00ff00:#000000"]
+	IPEX_20877_040T:p23r:e -- INPUT_MISC_LEADS:w3:w
+	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
+	IPEX_20877_040T:p24r:e -- INPUT_MISC_LEADS:w4:w
+	edge [color="#000000:#999999:#999999:#999999:#000000"]
+	IPEX_20877_040T:p25r:e -- INPUT_MISC_LEADS:w5:w
+	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
+	IPEX_20877_040T:p26r:e -- INPUT_MISC_LEADS:w6:w
+	edge [color="#000000:#0066ff:#0066ff:#0066ff:#000000"]
+	IPEX_20877_040T:p27r:e -- INPUT_MISC_LEADS:w7:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	IPEX_20877_040T:p28r:e -- INPUT_MISC_LEADS:w8:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	IPEX_20877_040T:p29r:e -- INPUT_MISC_LEADS:w9:w
+	edge [color="#000000:#8000ff:#8000ff:#8000ff:#000000"]
+	IPEX_20877_040T:p30r:e -- INPUT_MISC_LEADS:w10:w
+	edge [color="#000000:#999999:#ff66cc:#999999:#000000"]
+	IPEX_20877_040T:p31r:e -- INPUT_MISC_LEADS:w11:w
+	edge [color="#000000:#ff0000:#0066ff:#ff0000:#000000"]
+	IPEX_20877_040T:p32r:e -- INPUT_MISC_LEADS:w12:w
+	edge [color="#000000:#ffffff:#00ff00:#ffffff:#000000"]
+	IPEX_20877_040T:p33r:e -- INPUT_MISC_LEADS:w13:w
+	edge [color="#000000:#895956:#00ff00:#895956:#000000"]
+	IPEX_20877_040T:p34r:e -- INPUT_MISC_LEADS:w14:w
+	edge [color="#000000:#ffffff:#ffff00:#ffffff:#000000"]
+	IPEX_20877_040T:p35r:e -- INPUT_MISC_LEADS:w15:w
+	edge [color="#000000:#ffff00:#895956:#ffff00:#000000"]
+	IPEX_20877_040T:p36r:e -- INPUT_MISC_LEADS:w16:w
+	edge [color="#000000:#ffffff:#999999:#ffffff:#000000"]
+	IPEX_20877_040T:p37r:e -- INPUT_MISC_LEADS:w17:w
+	edge [color="#000000:#999999:#895956:#999999:#000000"]
+	IPEX_20877_040T:p38r:e -- INPUT_MISC_LEADS:w18:w
+	edge [color="#000000:#ffffff:#ff66cc:#ffffff:#000000"]
+	IPEX_20877_040T:p39r:e -- INPUT_MISC_LEADS:w19:w
+	edge [color="#000000:#ff66cc:#895956:#ff66cc:#000000"]
+	IPEX_20877_040T:p40r:e -- INPUT_MISC_LEADS:w20:w
+	INPUT_MISC_LEADS [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">INPUT_MISC_LEADS</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">20x</td>
+   <td balign="left">AWG 36</td>
+   <td balign="left">+ S</td>
+   <td balign="left">10.0 cm</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>IPEX_20877_040T:21:EDP_HPD</td>
     <td>
      1:WH
     </td>
-    <td>F1:1</td>
+    <td><!-- 1_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
@@ -406,11 +504,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:2:17.6V_PWR</td>
+    <td>IPEX_20877_040T:22:BL_PWM</td>
     <td>
      2:BN
     </td>
-    <td>F1:1</td>
+    <td><!-- 2_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
@@ -424,11 +522,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:3:17.6V_PWR</td>
+    <td>IPEX_20877_040T:23:BL_OFF</td>
     <td>
      3:GN
     </td>
-    <td>F1:1</td>
+    <td><!-- 3_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
@@ -442,11 +540,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:5:GND</td>
+    <td>IPEX_20877_040T:24:NC</td>
     <td>
      4:YE
     </td>
-    <td>F1:1</td>
+    <td><!-- 4_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
@@ -460,11 +558,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:39:GND</td>
+    <td>IPEX_20877_040T:25:NC</td>
     <td>
      5:GY
     </td>
-    <td>F1:1</td>
+    <td><!-- 5_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="10">
@@ -478,11 +576,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:40:GND</td>
+    <td>IPEX_20877_040T:26:3V_EDP</td>
     <td>
      6:PK
     </td>
-    <td>F1:1</td>
+    <td><!-- 6_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="10">
@@ -496,7 +594,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 7_in --></td>
+    <td>IPEX_20877_040T:27:3V_EDP</td>
     <td>
      7:BU
     </td>
@@ -514,7 +612,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 8_in --></td>
+    <td>IPEX_20877_040T:28:3V_EDP</td>
     <td>
      8:RD
     </td>
@@ -532,7 +630,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 9_in --></td>
+    <td>IPEX_20877_040T:29:3V_TS</td>
     <td>
      9:BK
     </td>
@@ -550,7 +648,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 10_in --></td>
+    <td>IPEX_20877_040T:30:3V_TS</td>
     <td>
      10:VT
     </td>
@@ -568,7 +666,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 11_in --></td>
+    <td>IPEX_20877_040T:31:USB20_P8_R</td>
     <td>
      11:GYPK
     </td>
@@ -586,7 +684,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 12_in --></td>
+    <td>IPEX_20877_040T:32:USB20_N8_R</td>
     <td>
      12:RDBU
     </td>
@@ -604,7 +702,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 13_in --></td>
+    <td>IPEX_20877_040T:33:TS_EN</td>
     <td>
      13:WHGN
     </td>
@@ -622,7 +720,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 14_in --></td>
+    <td>IPEX_20877_040T:34:TS_RST</td>
     <td>
      14:BNGN
     </td>
@@ -640,7 +738,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 15_in --></td>
+    <td>IPEX_20877_040T:35:TS_INT</td>
     <td>
      15:WHYE
     </td>
@@ -658,7 +756,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 16_in --></td>
+    <td>IPEX_20877_040T:36:TS_SDA</td>
     <td>
      16:YEBN
     </td>
@@ -676,7 +774,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 17_in --></td>
+    <td>IPEX_20877_040T:37:TS_SCL</td>
     <td>
      17:WHGY
     </td>
@@ -694,7 +792,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 18_in --></td>
+    <td>IPEX_20877_040T:38:NC</td>
     <td>
      18:GYBN
     </td>
@@ -712,7 +810,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 19_in --></td>
+    <td>IPEX_20877_040T:39:GND</td>
     <td>
      19:WHPK
     </td>
@@ -730,7 +828,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 20_in --></td>
+    <td>IPEX_20877_040T:40:GND</td>
     <td>
      20:PKBN
     </td>
@@ -747,235 +845,101 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 21_in --></td>
-    <td>
-     21:WHBU
-    </td>
-    <td><!-- 21_out --></td>
+    <td><!-- s_in --></td>
+    <td>Shield</td>
+    <td><!-- s_out --></td>
    </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w21" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 22_in --></td>
-    <td>
-     22:BNBU
-    </td>
-    <td><!-- 22_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w22" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 23_in --></td>
-    <td>
-     23:WHRD
-    </td>
-    <td><!-- 23_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w23" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 24_in --></td>
-    <td>
-     24:BNRD
-    </td>
-    <td><!-- 24_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w24" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 25_in --></td>
-    <td>
-     25:WHBK
-    </td>
-    <td><!-- 25_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w25" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 26_in --></td>
-    <td>
-     26:BNBK
-    </td>
-    <td><!-- 26_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w26" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 27_in --></td>
-    <td>
-     27:GYGN
-    </td>
-    <td><!-- 27_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w27" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 28_in --></td>
-    <td>
-     28:YEGY
-    </td>
-    <td><!-- 28_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w28" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 29_in --></td>
-    <td>
-     29:PKGN
-    </td>
-    <td><!-- 29_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w29" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 30_in --></td>
-    <td>
-     30:YEPK
-    </td>
-    <td><!-- 30_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w30" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
+   <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0" port="ws"></td></tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Should be exposed ends to enable soldering to a custom board.<br />Please wrap bundle until last 5 cm exposed cables <br />(3mm exposed leads)<br /></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
-	F2:e -- W2:w1:w
-	W2:w1:e -- X2:p1l:w
+	IPEX_20877_040T:p5r:e -- PASSTHROUGH_BUNDLE:w1:w
+	PASSTHROUGH_BUNDLE:w1:e -- IPEX_20633_030T:p28l:w
 	edge [color="#000000:#895956:#895956:#895956:#000000"]
-	F2:e -- W2:w2:w
-	W2:w2:e -- X2:p5l:w
+	IPEX_20877_040T:p6r:e -- PASSTHROUGH_BUNDLE:w2:w
+	PASSTHROUGH_BUNDLE:w2:e -- IPEX_20633_030T:p27l:w
 	edge [color="#000000:#00ff00:#00ff00:#00ff00:#000000"]
-	F2:e -- W2:w3:w
-	W2:w3:e -- X2:p6l:w
+	IPEX_20877_040T:p7r:e -- PASSTHROUGH_BUNDLE:w3:w
+	PASSTHROUGH_BUNDLE:w3:e -- IPEX_20633_030T:p26l:w
 	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
-	F2:e -- W2:w4:w
-	W2:w4:e -- X2:p7l:w
+	IPEX_20877_040T:p8r:e -- PASSTHROUGH_BUNDLE:w4:w
+	PASSTHROUGH_BUNDLE:w4:e -- IPEX_20633_030T:p25l:w
 	edge [color="#000000:#999999:#999999:#999999:#000000"]
-	F2:e -- W2:w5:w
-	W2:w5:e -- X2:p8l:w
+	IPEX_20877_040T:p9r:e -- PASSTHROUGH_BUNDLE:w5:w
+	PASSTHROUGH_BUNDLE:w5:e -- IPEX_20633_030T:p23l:w
 	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
-	F2:e -- W2:w6:w
-	W2:w6:e -- X2:p9l:w
+	IPEX_20877_040T:p10r:e -- PASSTHROUGH_BUNDLE:w6:w
+	PASSTHROUGH_BUNDLE:w6:e -- IPEX_20633_030T:p24l:w
 	edge [color="#000000:#0066ff:#0066ff:#0066ff:#000000"]
-	F2:e -- W2:w7:w
-	W2:w7:e -- X2:p10l:w
-	W2 [label=<
+	IPEX_20877_040T:p11r:e -- PASSTHROUGH_BUNDLE:w7:w
+	PASSTHROUGH_BUNDLE:w7:e -- IPEX_20633_030T:p22l:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	IPEX_20877_040T:p12r:e -- PASSTHROUGH_BUNDLE:w8:w
+	PASSTHROUGH_BUNDLE:w8:e -- IPEX_20633_030T:p20l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	IPEX_20877_040T:p13r:e -- PASSTHROUGH_BUNDLE:w9:w
+	PASSTHROUGH_BUNDLE:w9:e -- IPEX_20633_030T:p21l:w
+	edge [color="#000000:#8000ff:#8000ff:#8000ff:#000000"]
+	IPEX_20877_040T:p14r:e -- PASSTHROUGH_BUNDLE:w10:w
+	PASSTHROUGH_BUNDLE:w10:e -- IPEX_20633_030T:p19l:w
+	edge [color="#000000:#999999:#ff66cc:#999999:#000000"]
+	IPEX_20877_040T:p15r:e -- PASSTHROUGH_BUNDLE:w11:w
+	PASSTHROUGH_BUNDLE:w11:e -- IPEX_20633_030T:p17l:w
+	edge [color="#000000:#ff0000:#0066ff:#ff0000:#000000"]
+	IPEX_20877_040T:p16r:e -- PASSTHROUGH_BUNDLE:w12:w
+	PASSTHROUGH_BUNDLE:w12:e -- IPEX_20633_030T:p18l:w
+	edge [color="#000000:#ffffff:#00ff00:#ffffff:#000000"]
+	IPEX_20877_040T:p17r:e -- PASSTHROUGH_BUNDLE:w13:w
+	PASSTHROUGH_BUNDLE:w13:e -- IPEX_20633_030T:p16l:w
+	edge [color="#000000:#895956:#00ff00:#895956:#000000"]
+	IPEX_20877_040T:p18r:e -- PASSTHROUGH_BUNDLE:w14:w
+	PASSTHROUGH_BUNDLE:w14:e -- IPEX_20633_030T:p14l:w
+	edge [color="#000000:#ffffff:#ffff00:#ffffff:#000000"]
+	IPEX_20877_040T:p19r:e -- PASSTHROUGH_BUNDLE:w15:w
+	PASSTHROUGH_BUNDLE:w15:e -- IPEX_20633_030T:p15l:w
+	edge [color="#000000:#ffff00:#895956:#ffff00:#000000"]
+	IPEX_20877_040T:p20r:e -- PASSTHROUGH_BUNDLE:w16:w
+	PASSTHROUGH_BUNDLE:w16:e -- IPEX_20633_030T:p13l:w
+	edge [color="#000000:#ffffff:#999999:#ffffff:#000000"]
+	IPEX_20877_040T:p27r:e -- PASSTHROUGH_BUNDLE:w17:w
+	PASSTHROUGH_BUNDLE:w17:e -- IPEX_20633_030T:p29l:w
+	edge [color="#000000:#999999:#895956:#999999:#000000"]
+	IPEX_20877_040T:p28r:e -- PASSTHROUGH_BUNDLE:w18:w
+	PASSTHROUGH_BUNDLE:w18:e -- IPEX_20633_030T:p30l:w
+	PASSTHROUGH_BUNDLE [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">W2</td>
+   <td balign="left">PASSTHROUGH_BUNDLE</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">30x</td>
-   <td balign="left">AWG 36</td>
-   <td balign="left">0.02 m</td>
+   <td balign="left">18x</td>
+   <td balign="left">AWG 40</td>
+   <td balign="left">+ S</td>
+   <td balign="left">20.0 cm</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:5:GND</td>
     <td>
      1:WH
     </td>
-    <td>X2:1:BL_ANODE</td>
+    <td>IPEX_20633_030T:28:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
@@ -989,11 +953,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:6:AUXP</td>
     <td>
      2:BN
     </td>
-    <td>X2:5:NC</td>
+    <td>IPEX_20633_030T:27:AUXP</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
@@ -1007,11 +971,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:7:AUXN</td>
     <td>
      3:GN
     </td>
-    <td>X2:6:LED_6</td>
+    <td>IPEX_20633_030T:26:AUXN</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
@@ -1025,11 +989,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:8:GND</td>
     <td>
      4:YE
     </td>
-    <td>X2:7:LED_5</td>
+    <td>IPEX_20633_030T:25:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
@@ -1043,11 +1007,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:9:TXP_0</td>
     <td>
      5:GY
     </td>
-    <td>X2:8:LED_4</td>
+    <td>IPEX_20633_030T:23:TXP_0</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="10">
@@ -1061,11 +1025,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:10:TXN_0</td>
     <td>
      6:PK
     </td>
-    <td>X2:9:LED_3</td>
+    <td>IPEX_20633_030T:24:TXN_0</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="10">
@@ -1079,11 +1043,392 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>F2:1</td>
+    <td>IPEX_20877_040T:11:GND</td>
     <td>
      7:BU
     </td>
-    <td>X2:10:LED_2</td>
+    <td>IPEX_20633_030T:22:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w7" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:12:TXP_1</td>
+    <td>
+     8:RD
+    </td>
+    <td>IPEX_20633_030T:20:TXP_1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w8" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:13:TXN_1</td>
+    <td>
+     9:BK
+    </td>
+    <td>IPEX_20633_030T:21:TXN_1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w9" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:14:GND</td>
+    <td>
+     10:VT
+    </td>
+    <td>IPEX_20633_030T:19:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w10" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:15:TXP_2</td>
+    <td>
+     11:GYPK
+    </td>
+    <td>IPEX_20633_030T:17:TXP_2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w11" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:16:TXN_2</td>
+    <td>
+     12:RDBU
+    </td>
+    <td>IPEX_20633_030T:18:TXN_2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w12" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:17:GND</td>
+    <td>
+     13:WHGN
+    </td>
+    <td>IPEX_20633_030T:16:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w13" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:18:TXP_3</td>
+    <td>
+     14:BNGN
+    </td>
+    <td>IPEX_20633_030T:14:TXP_3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w14" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:19:TXN_3</td>
+    <td>
+     15:WHYE
+    </td>
+    <td>IPEX_20633_030T:15:TXN_3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w15" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:20:GND</td>
+    <td>
+     16:YEBN
+    </td>
+    <td>IPEX_20633_030T:13:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w16" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:27:3V_EDP</td>
+    <td>
+     17:WHGY
+    </td>
+    <td>IPEX_20633_030T:29:3V_VCC</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w17" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>IPEX_20877_040T:28:3V_EDP</td>
+    <td>
+     18:GYBN
+    </td>
+    <td>IPEX_20633_030T:30:3V_VCC</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w18" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td><!-- s_in --></td>
+    <td>Shield</td>
+    <td><!-- s_out --></td>
+   </tr>
+   <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0" port="ws"></td></tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">please use AWG 40</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
+	OUTPUT_MISC_LEADS:w1:e -- IPEX_20633_030T:p1l:w
+	edge [color="#000000:#895956:#895956:#895956:#000000"]
+	OUTPUT_MISC_LEADS:w2:e -- IPEX_20633_030T:p4l:w
+	edge [color="#000000:#00ff00:#00ff00:#00ff00:#000000"]
+	OUTPUT_MISC_LEADS:w3:e -- IPEX_20633_030T:p6l:w
+	edge [color="#000000:#ffff00:#ffff00:#ffff00:#000000"]
+	OUTPUT_MISC_LEADS:w4:e -- IPEX_20633_030T:p7l:w
+	edge [color="#000000:#999999:#999999:#999999:#000000"]
+	OUTPUT_MISC_LEADS:w5:e -- IPEX_20633_030T:p8l:w
+	edge [color="#000000:#ff66cc:#ff66cc:#ff66cc:#000000"]
+	OUTPUT_MISC_LEADS:w6:e -- IPEX_20633_030T:p9l:w
+	edge [color="#000000:#0066ff:#0066ff:#0066ff:#000000"]
+	OUTPUT_MISC_LEADS:w7:e -- IPEX_20633_030T:p10l:w
+	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	OUTPUT_MISC_LEADS:w8:e -- IPEX_20633_030T:p11l:w
+	edge [color="#000000:#000000:#000000:#000000:#000000"]
+	OUTPUT_MISC_LEADS:w9:e -- IPEX_20633_030T:p12l:w
+	edge [color="#000000:#8000ff:#8000ff:#8000ff:#000000"]
+	OUTPUT_MISC_LEADS:w10:e -- IPEX_20633_030T:p29l:w
+	edge [color="#000000:#999999:#ff66cc:#999999:#000000"]
+	OUTPUT_MISC_LEADS:w11:e -- IPEX_20633_030T:p30l:w
+	OUTPUT_MISC_LEADS [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">OUTPUT_MISC_LEADS</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">11x</td>
+   <td balign="left">AWG 36</td>
+   <td balign="left">+ S</td>
+   <td balign="left">10.0 cm</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td><!-- 1_in --></td>
+    <td>
+     1:WH
+    </td>
+    <td>IPEX_20633_030T:1:BL_ANODE</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 2_in --></td>
+    <td>
+     2:BN
+    </td>
+    <td>IPEX_20633_030T:4:BIST</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 3_in --></td>
+    <td>
+     3:GN
+    </td>
+    <td>IPEX_20633_030T:6:LED_6</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 4_in --></td>
+    <td>
+     4:YE
+    </td>
+    <td>IPEX_20633_030T:7:LED_5</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 5_in --></td>
+    <td>
+     5:GY
+    </td>
+    <td>IPEX_20633_030T:8:LED_4</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 6_in --></td>
+    <td>
+     6:PK
+    </td>
+    <td>IPEX_20633_030T:9:LED_3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="10">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 7_in --></td>
+    <td>
+     7:BU
+    </td>
+    <td>IPEX_20633_030T:10:LED_2</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w7" height="10">
@@ -1101,7 +1446,7 @@ graph {
     <td>
      8:RD
     </td>
-    <td><!-- 8_out --></td>
+    <td>IPEX_20633_030T:11:LED_1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w8" height="10">
@@ -1119,7 +1464,7 @@ graph {
     <td>
      9:BK
     </td>
-    <td><!-- 9_out --></td>
+    <td>IPEX_20633_030T:12:EDP_HPD</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w9" height="10">
@@ -1137,7 +1482,7 @@ graph {
     <td>
      10:VT
     </td>
-    <td><!-- 10_out --></td>
+    <td>IPEX_20633_030T:29:3V_VCC</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w10" height="10">
@@ -1155,7 +1500,7 @@ graph {
     <td>
      11:GYPK
     </td>
-    <td><!-- 11_out --></td>
+    <td>IPEX_20633_030T:30:3V_VCC</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w11" height="10">
@@ -1168,350 +1513,20 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 12_in --></td>
-    <td>
-     12:RDBU
-    </td>
-    <td><!-- 12_out --></td>
+    <td><!-- s_in --></td>
+    <td>Shield</td>
+    <td><!-- s_out --></td>
    </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w12" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 13_in --></td>
-    <td>
-     13:WHGN
-    </td>
-    <td><!-- 13_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w13" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 14_in --></td>
-    <td>
-     14:BNGN
-    </td>
-    <td><!-- 14_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w14" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 15_in --></td>
-    <td>
-     15:WHYE
-    </td>
-    <td><!-- 15_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w15" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 16_in --></td>
-    <td>
-     16:YEBN
-    </td>
-    <td><!-- 16_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w16" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 17_in --></td>
-    <td>
-     17:WHGY
-    </td>
-    <td><!-- 17_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w17" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 18_in --></td>
-    <td>
-     18:GYBN
-    </td>
-    <td><!-- 18_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w18" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 19_in --></td>
-    <td>
-     19:WHPK
-    </td>
-    <td><!-- 19_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w19" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 20_in --></td>
-    <td>
-     20:PKBN
-    </td>
-    <td><!-- 20_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w20" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 21_in --></td>
-    <td>
-     21:WHBU
-    </td>
-    <td><!-- 21_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w21" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 22_in --></td>
-    <td>
-     22:BNBU
-    </td>
-    <td><!-- 22_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w22" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 23_in --></td>
-    <td>
-     23:WHRD
-    </td>
-    <td><!-- 23_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w23" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 24_in --></td>
-    <td>
-     24:BNRD
-    </td>
-    <td><!-- 24_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w24" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 25_in --></td>
-    <td>
-     25:WHBK
-    </td>
-    <td><!-- 25_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w25" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 26_in --></td>
-    <td>
-     26:BNBK
-    </td>
-    <td><!-- 26_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w26" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 27_in --></td>
-    <td>
-     27:GYGN
-    </td>
-    <td><!-- 27_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w27" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 28_in --></td>
-    <td>
-     28:YEGY
-    </td>
-    <td><!-- 28_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w28" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 29_in --></td>
-    <td>
-     29:PKGN
-    </td>
-    <td><!-- 29_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w29" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 30_in --></td>
-    <td>
-     30:YEPK
-    </td>
-    <td><!-- 30_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w30" height="10">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff66cc" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
+   <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0" port="ws"></td></tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Should be exposed ends to enable soldering to a custom board.<br />Please wrap bundle until last 5 cm exposed cables <br />(3mm exposed leads)<br /></td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

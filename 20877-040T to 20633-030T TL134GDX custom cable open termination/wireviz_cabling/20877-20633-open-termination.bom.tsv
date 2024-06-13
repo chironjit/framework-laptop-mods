@@ -1,5 +1,7 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 30 x AWG 36	0.04	m	W1, W2
-2	Connector, IPEX 20453-040T or compatible, male, 40 pins	1		X1
-3	Connector, IPEX 20633-030T or compatible, male, 30 pins	1		X2
-4	Connector, exposed leads	2		F1, F2
+1	Cable, 11 x AWG 36 shielded	10.0	cm	OUTPUT_MISC_LEADS
+2	Cable, 18 x AWG 40 shielded	20.0	cm	PASSTHROUGH_BUNDLE
+3	Cable, 20 x AWG 36 shielded	10.0	cm	INPUT_MISC_LEADS
+4	Cable, 3 x AWG 36 shielded	10.0	cm	INPUT_POWER_LEADS
+5	Connector, IPEX 20633-030T or compatible, 30 pins	1		IPEX_20633_030T
+6	Connector, IPEX 20877-040T or compatible, 40 pins	1		IPEX_20877_040T
