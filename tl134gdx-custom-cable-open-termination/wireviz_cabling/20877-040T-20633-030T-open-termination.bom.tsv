@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 18 x AWG 40 shielded	20.0	cm	PASSTHROUGH_BUNDLE
+2	Cable, 3 x AWG 36	10.0	cm	INPUT_POWER_LEADS
+3	Cable, 8 x AWG 36	10.0	cm	INPUT_MISC_LEADS
+4	Cable, 9 x AWG 36	10.0	cm	OUTPUT_MISC_LEADS
+5	Connector, IPEX 20633-030T or compatible, 30 pins	1		IPEX_20633_030T
+6	Connector, IPEX 20877-040T or compatible, 40 pins	1		IPEX_20877_040T

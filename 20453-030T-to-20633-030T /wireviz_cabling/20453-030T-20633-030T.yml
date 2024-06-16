@@ -1,0 +1,31 @@
+connectors:
+  IPEX 20453-030T:
+    type: IPEX 20453-030T or compatible
+    subtype: male
+    pinlabels: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]
+    notes: |
+            1. Cables from the connector should be right angle
+            (please see sample photos of images)
+            2. Must have pull bar with insulation and pull tab
+  IPEX 20633-030T:
+    type: IPEX 20633-030T or compatible
+    subtype: male
+    pinlabels: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]
+    notes: |
+            1. Cables from the connector should be right angle
+            (please see sample photos of images)
+            2. Must have pull bar with insulation and pull tab
+cables:
+  W1:
+    gauge: AWG 40
+    length: 20 cm
+    wirecount: 30
+    shield: true
+    notes: Coaxial cables
+
+connections:
+  -
+    - IPEX 20453-030T: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+    - W1: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+    - IPEX 20633-030T: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+
